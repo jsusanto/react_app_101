@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Parent from "./components/Parent"; // Import Parent Component
+import FetchDataAPI from "./components/FetchDataAPI"; // Import FetchDataAPI Component
 
 function App() {
   return (
@@ -18,6 +20,19 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <main className="App-body">
+        <div>
+          <Parent />
+        </div>
+
+        <div>
+          <FetchDataAPI/>
+        </div>
+      </main>
+      <footer className="App-footer">
+        <p>Footer content here</p>
+      </footer>
     </div>
   );
 }
